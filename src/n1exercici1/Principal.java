@@ -1,0 +1,37 @@
+package n1exercici1;
+
+import java.util.ArrayList;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		ArrayList<Month> mesos = afegirMesos();
+		
+		for (Month month : mesos) {
+			System.out.println(month);
+		}
+		
+	}
+
+	public static ArrayList<Month> afegirMesos() {
+		
+		ArrayList<Month> mesos = new ArrayList<Month>();
+		
+		mesos.add(new Month("gener"));
+		mesos.add(new Month("febrer"));
+		mesos.add(new Month("mar�"));
+		mesos.add(new Month("abril"));
+		mesos.add(new Month("maig"));
+		mesos.add(new Month("juny"));
+		mesos.add(new Month("juliol"));
+		mesos.add(new Month("agost"));
+		mesos.add(new Month("setembre"));
+		mesos.add(new Month("octubre"));
+		mesos.add(new Month("novembre"));
+		mesos.add(new Month("desembre"));
+		
+		return mesos;
+	}
+	
+}
